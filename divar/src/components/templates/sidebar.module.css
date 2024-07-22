@@ -1,0 +1,35 @@
+.sidebar {
+  margin-top: 30px;
+  width: 300px;
+}
+
+.sidebar li {
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  padding-bottom: 5px;
+  transition: all 0.5s ease-in;
+}
+
+.sidebar li:hover {
+  border-bottom: 3px solid #a62626;
+  transition: all 0.1s ease-out;
+}
+
+.sidebar li p {
+  font-weight: 200;
+  margin-right: 10px;
+  color: #808080;
+  transition: all 0.1s ease-out;
+}
+
+.sidebar li img {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar li p:hover {
+  color: #a62626;
+  letter-spacing: 2px;
+  transition: all 0.1s ease-out;
+}

@@ -1,0 +1,90 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eaeaea;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 45px;
+  margin-left: 40px;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.header span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808080;
+}
+
+.header p {
+  margin: 0 1px;
+  font-size: 0.9rem;
+  line-height: normal;
+  color: #808080;
+  margin: 0 10px;
+  transition: all 0.2s ease-in;
+}
+
+.header .admin:hover,
+.profile:hover,
+.exit:hover {
+  color: #a62626;
+  transition: all 0.2s ease-in;
+}
+
+.header .exit {
+  background: #ffffff;
+  border: 1px solid #a62626;
+  color: #a62626;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.header .button {
+  background: #a62626;
+  border: none;
+  color: #fff;
+  height: 40px;
+  width: 80px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hamburger_btn{
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  background: inherit;
+  padding: 5px;
+  cursor: pointer;
+  line-height: 10px;
+}
+
+.hamburger_btn img{
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 500px) {
+  .logo{
+    margin-left: 10px;
+  }
+  .header span p {
+    margin: 0;
+  }
+}

@@ -1,6 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
 import { sendOtp } from "../../services/auth";
-import styles from "./sendotpForm.module.css"
+import styles from "./sendotpForm.module.css";
+import { p2e } from "../../utils/numbers";
 
 export default function SendOtpForm(props: {
   mobile: string;
@@ -10,9 +11,8 @@ export default function SendOtpForm(props: {
   const submitHandler = async (e: any) => {
     e.preventDefault();
     if (props.mobile.length !== 11) return;
-    const { response, error } = await sendOtp(props.mobile);
+    await sendOtp(p2e(props.mobile));
     props.setStep(2);
-    console.log(response, error);
   };
 
   return (

@@ -10,30 +10,30 @@
 }
 
 .form p {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.form span{
-    color: #808080;
-    font-size: .8rem;
-    margin-bottom: 20px;
+.form span {
+  color: #808080;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
 }
 
-.form input{
-    margin: 10px 0 20px;
-    padding: 5px;
-    border: 1px solid #c0c0c0;
-    border-radius:  5px;
+.form input {
+  margin: 10px 0 20px;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
 }
 
-.form button{
-    width: fit-content;
-    padding: 5px 10px;
-    border: none;
-    background: #a62626;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
+.form button {
+  width: fit-content;
+  padding: 5px 10px;
+  border: none;
+  background: #a62626;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }

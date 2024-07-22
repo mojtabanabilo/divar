@@ -1,0 +1,42 @@
+.list {
+  margin: 50px 0 70px;
+}
+
+.list .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px solid #eaeaea;
+  border-radius: 5px;
+}
+
+.list .section_1,
+.section_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > * {
+    margin: 0 5px;
+  }
+}
+
+.list h5 {
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.list p {
+  color: #a62626;
+}
+
+.list button {
+  background: #ff8686;
+  border: none;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 10px;
+  cursor: pointer;
+}

@@ -2,15 +2,14 @@ import { Dispatch } from "react";
 import { checkOtp } from "../../services/auth";
 import { setCookie } from "../../utils/cookies";
 import { useNavigate } from "react-router-dom";
-import styles from "./checkOtpForm.module.css"
+import styles from "./checkOtpForm.module.css";
 
 export default function CheckOtpForm(props: {
   code: string;
   setCode: Dispatch<React.SetStateAction<string>>;
   mobile: string;
   setStep: Dispatch<React.SetStateAction<number>>;
-}):JSX.Element {
-  // navigator
+}): JSX.Element {
   const navigate = useNavigate();
 
   const submitHandler = async (e: any) => {
@@ -19,15 +18,15 @@ export default function CheckOtpForm(props: {
     const { response, error } = await checkOtp(props.mobile, props.code);
 
     if (response) {
-      console.log(response);
-      
       setCookie(response.data);
-      navigate("/")
+      navigate("/");
+      window.location.reload();
     }
     if (error) {
       console.log(error);
     }
   };
+
   return (
     <form onSubmit={submitHandler} className={styles.form}>
       <p>تایید کد SMS شده.</p>
@@ -41,7 +40,9 @@ export default function CheckOtpForm(props: {
         onChange={(e) => props.setCode(e.target.value)}
       />
       <button type="submit">ورود</button>
-      <button onClick={() => props.setStep(1)} className={styles.backButton}>تغییر شماره موبایل</button>
+      <button onClick={() => props.setStep(1)} className={styles.backButton}>
+        تغییر شماره موبایل
+      </button>
     </form>
   );
 }

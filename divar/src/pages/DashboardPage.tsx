@@ -1,6 +1,11 @@
+import Addpost from "../components/templates/Addpost";
+import PostList from "../components/templates/PostList";
 
 export default function DashboardPage() {
   return (
-    <div>DashboardPage</div>
+    <>
+      <Addpost />
+      <PostList />
+    </>
   )
 }

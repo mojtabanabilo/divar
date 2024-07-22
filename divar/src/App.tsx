@@ -3,6 +3,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Router from "./router/Router";
 import defaultOptions from "./configs/reactQueryConfig";
+import Layouts from "./layouts/Layouts";
+import { Toaster } from "react-hot-toast";
 
 function App(): JSX.Element {
   const queryClient = new QueryClient({ defaultOptions });
@@ -10,7 +12,10 @@ function App(): JSX.Element {
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools />
       <BrowserRouter>
-        <Router />
+        <Layouts>
+          <Router />
+          <Toaster />
+        </Layouts>
       </BrowserRouter>
     </QueryClientProvider>
   );

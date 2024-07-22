@@ -1,7 +1,62 @@
+/* ----------------------------- YekanBakh ----------------------------- */
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../assets/fonts/Vazirmatn-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/Vazirmatn-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/Vazirmatn-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Vazirmatn-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/Vazirmatn-ExtraBold.ttf") format("truetype");
+}
+/* ----------------------------- YekanBakh ----------------------------- */
+
 :root {
-  font-family: "Vazir", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Vazir, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a62626;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #731818;
+  cursor: grab;
 }
 
 body {
@@ -20,6 +75,11 @@ body {
 a {
   text-decoration: inherit;
   color: inherit;
+}
+
+p,
+label {
+  font-weight: 600;
 }
 
 button,
